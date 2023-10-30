@@ -1,10 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Tienda Online</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
-<body>
-$END$
-</body>
-</html>
+<header class="main-header">
+    <div class="container container--flex">
+        <div class="main-header__container">
+            <h1 class="main-header__title">TIENDA DEPORTIVA</h1>
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+                <ul class="menu">
+                    <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">PERSONALIZACION DE PRODUCTOS</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">COTIZACIONES</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">VENTAS</a></li>
+                    <li class="menu__item"><a href="\PaginaDeportiva\solicitud\index.html" class="menu__link">SOLICITUD DE SERVICIO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-header__container">
+            <span class="main-header__txt">Necesitas ayuda</span>
+            <p class="main-header__txt"><i class="fas fa-phone"></i>Llamar al 3147452078</p>
+        </div>
+        <div class="main-header__container">
+            <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+            <a href="" class="main-header__btn">Mi Carrito <i class="fas fa-shopping-cart"></i></a>
+            <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+        </div>
+    </div>
+</header>
+<div class="container-slider">
+    <div class="slider" id="slider">
+        <div class="slider__section">
+            <img src="Imagen de internet" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">Zapatos de hombre</h2>
+                <p class="slider__txt">Oferta de hoy 50% off</p>
+                <a href="" class="btn-shop">COMPRA AHORA</a>
+            </div>
+        </div>
+        <div class="slider__section">
+            <img src="https://golty.com.co/wp-content/uploads/2023/04/tenis-deportivos-run-negro1.jpg" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">Zapatos de hombre</h2>
+                <p class="slider__txt">Oferta de hoy 50% off</p>
+                <a href="" class="btn-shop">COMPRA AHORA</a>
+            </div>
+        </div>
+        <div class="slider__section">
+            <img src="Imagen de internet" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">Zapatos de hombre</h2>
+                <p class="slider__txt">Oferta de hoy 50% off</p>
+                <a href="" class="btn-shop">COMPRA AHORA</a>
+            </div>
+        </div>
+        <div class="slider__section">
+            <img src="Imagen de internet" alt="" class="slider__img">
+            <div class="slider__content">
+                <h2 class="slider__title">Zapatos de hombre</h2>
+                <p class="slider__txt">Oferta de hoy 50% off</p>
+                <a href="" class="btn-shop">COMPRA AHORA</a>
+            </div>
+        </div>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</div>
+<main class="main">
+    <div class="container">
+        <h2 class="main-title">Novedades</h2>
+        <section class="container-products">
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">Camisa</h3>
+                    <span class="product__price">$575.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="https://img.ws.mms.shopee.com.co/3b6fdd341fd2effd8fa42abeaef33d5b" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">Zapatos</h3>
+                    <span class="product__price">$575.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/b5/89/d7/b589d7265c0b2dbee67a9337fdce9e0e.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">Gorras</h3>
+                    <span class="product__price">$575.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+            <div class="product">
+                <img src="https://i.linio.com/p/30220c6239af181b3bdf314a506a8b2f-product.jpg" alt="" class="product__img">
+                <div class="product__description">
+                    <h3 class="product__title">Medias</h3>
+                    <span class="product__price">$325.00</span>
+                </div>
+                <i class="product__icon fas fa-cart-plus"></i>
+            </div>
+        </section>
+        <section class="container__testimonials">
+            <h2 class="section__title">Sobre Nuestra Tienda</h2>
+            <h3 class="testimonial__title">Hecho en Colombia</h3>
+            <p class="testimonial__txt">Son productos hechos con el mayor de los cariños para brindarles una mayor comodidad a la hora de realizar algun deporto o alguna actividad fisica.</p>
+        </section>
+
+        <div class="container-editor">
+            <div class="editor__item">
+                <img src="https://zshopp.com/wp-content/uploads/2022/04/gris.jpg" alt="" class="editor__img">
+                <p class="editor__circle">QUIERES SABER MAS</p>
+            </div>
+            <div class="editor__item">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_678858-MCO69464650097_052023-O.webp" alt="" class="editor__img">
+                <p class="editor__circle">QUIERES SABER MAS</p>
+            </div>
+        </div>
+        <section class="container-tips">
+            <div class="tip">
+                <i class="far fa-hand-paper"></i>
+                <h2 class="tip__title">Satisfacion</h2>
+                <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+            <div class="tip">
+                <i class="fas fa-rocket"></i>
+                <h2 class="tip__title">Envio rapido</h2>
+                <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+            <div class="tip">
+                <i class="fas fa-cog"></i>
+                <h2 class="tip__title">Personalizar</h2>
+                <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="main-footer">
+    <div class="footer__section">
+        <h2 class="footer__title">Sobre Nosotros</h2>
+        <p class="footer__txt">Sera tu mejor opcion.</p>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">Ubicacion :</h2>
+        <p class="footer__txt">Marinilla-Antioquia</p>
+        <i class="fas fa-map-marker-alt fa-fw"></i>
+        Carrera 36A - 31 - 16
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6612098505775!2d-75.34098992570534!3d6.176088827104465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46a020e1b26685%3A0xb784ac6e70274285!2sCra.%2036a%20%2331-16%2C%20Marinilla%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1696963759921!5m2!1ses-419!2sco" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 class="footer__title">Contacto</h2>
+        <p class="footer__txt">Telefono : +57 314 745 20 78</p>
+        <p class="footer__txt">Correo : info@ejemplo.com</p>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">Enlaces rapidos</h2>
+        <a href="" class="footer__link">Inicio</a>
+        <a href="" class="footer__link">Acerca de</a>
+        <a href="" class="footer__link">Error</a>
+        <a href="" class="footer__link">Comercio</a>
+        <a href="" class="footer__link">Contactenos</a>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">Regístrate para recibir tus ofertas</h2>
+        <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y actualizaciones.</p>
+        <input type="email" class="footer__input" placeholder="Introduce tu correo electronico">
+    </div>
+    <p class="copy">© 2023 Santiago | LuisaFernanda</p>
+</footer>
